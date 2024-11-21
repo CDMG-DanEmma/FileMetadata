@@ -1,0 +1,37 @@
+{
+    "network_paths": {
+        "root": "P:/",
+        "projects": "P:/Projects",
+        "templates": "P:/Templates"
+    },
+    "metadata": {
+        "path": "metadata.xlsx",
+        "backup_dir": "metadata_backups"
+    },
+    "ui": {
+        "window_size": [
+            1920,
+            1009
+        ],
+        "splitter_sizes": [
+            1142,
+            761
+        ]
+    },
+    "file_types": {
+        "drawing": [
+            ".dwg",
+            ".pdf",
+            ".rvt"
+        ],
+        "document": [
+            ".doc",
+            ".docx",
+            ".pdf"
+        ],
+        "spreadsheet": [
+            ".xls",
+            ".xlsx"
+        ]
+    }
+}

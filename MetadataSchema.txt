@@ -1,0 +1,162 @@
+"""
+# Metadata Schema
+
+## Project Information
+- `projectNumber`: string
+  - Unique project identifier
+- `department`: enum
+  - Electrical
+  - Civil
+  - Facility Planning
+  - Piping
+  - Mechanical
+  - Automation
+  - Project Management
+- `area`: list
+  - Processing Areas:
+    - Furnace/Melting
+    - Lehr/Cooling
+    - Batch House
+    - Forming
+    - Cold End
+    - Quality Control Lab
+    - Raw Materials Storage
+  - Infrastructure:
+    - Control Room
+    - Electrical Room
+    - MCC Room
+    - Substation
+    - Compressor Room
+    - Boiler Room
+    - Water Treatment
+    - Cooling Tower
+    - Dust Collection
+  - General Areas:
+    - Warehouse
+    - Loading Dock
+    - Office Areas
+    - Break Room
+    - Maintenance Shop
+    - Parking
+    - Access Roads
+    - Emergency Assembly Points
+
+## Document Properties
+- `type`: enum
+  - Drawing Types:
+    - Plan View
+    - Single Line Diagram
+    - Elevation View
+    - Section View
+    - Equipment Layout
+    - Cable Tray Layout
+    - Conduit Layout
+    - Piping Layout
+    - Foundation Plan
+    - Structural Details
+    - Electrical Details
+    - Mechanical Details
+    - Process Flow Diagram
+    - P&ID
+    - Network Diagram
+    - Grounding Plan
+    - Lighting Plan
+    - HVAC Layout
+    - Fire Protection Plan
+    - Security System Layout
+  - Documentation:
+    - Vendor Submittal
+    - Technical Specification
+    - Calculation Sheet
+    - Reference Document
+    - Operating Manual
+    - Maintenance Manual
+    - Test Report
+    - Inspection Report
+    - Commissioning Document
+    - Training Material
+    - Design Basis
+    - Data Sheet
+    - Bill of Materials
+    - Equipment Schedule
+  - Other:
+    - Proposal
+    - Contract
+    - Change Order
+    - RFI
+    - Correspondence
+    - Meeting Minutes
+    - Schedule
+    - Cost Estimate
+    - Bid Analysis
+    - Permit Application
+    - Risk Assessment
+    - Quality Plan
+    - Project Charter
+    - Lessons Learned
+- `source`: enum
+  - Internal (CDMG)
+  - Vendor
+  - Client
+- `revisionNumber`: string
+- `issueStatus`: enum
+  - For Review
+  - For Bid
+  - For Construction
+  - As-Built
+- `workStatus`: enum
+  - Not Started
+  - In Progress
+  - On Hold
+  - Complete
+- `scale`: string
+- `paperSize`: enum
+  - A0
+  - A1
+  - A2
+  - A3
+  - A4
+- `fileFormat`: enum
+  - DWG
+  - PDF
+  - RVT
+  - DGN
+  - XLS
+  - DOC
+- `coordinates`: string
+- `gridReference`: string
+
+## Technical Reference
+- `applicableCodes`: list
+  - NEC Articles
+  - Building Codes
+  - Industry Standards
+- `equipmentTags`: list
+- `relatedDocuments`: list
+  - Cross-referenced drawing numbers
+
+## Project Management
+- `priority`: enum
+  - High
+  - Medium
+  - Low
+- `milestone`: string
+- `contractPhase`: string
+- `budgetCode`: string
+- `deliverableID`: string
+
+## Administrative
+- `dateAdded`: date
+- `lastModified`: date
+- `approvedBy`: string
+- `comments`: text
+
+## Version Control
+- `changeHistory`: list
+  - Date
+  - Author
+  - Description
+- `revisionNotes`: text
+- `supersededDrawings`: list
+- `relatedVersions`: list
+"""
